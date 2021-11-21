@@ -130,7 +130,7 @@ DivProfitPerWeek.appendChild(ContentProfitPerWeek);
 //DivProfitPerWeek.innerText = "DivProfitPerWeek   "+DivProfitPerWeek+" ￦";
 DivProfitPerWeek.style.color = "white";
 //DivProfitPerWeek.style.fontSize = "xx-large";
-DivProfitPerWeek.style.position = "absolute";
+DivProfitPerWeek.style.position = "relative";
 DivProfitPerWeek.style.left = "0px";
 DivProfitPerWeek.style.top = "170px";
 DivProfitPerWeek.style.backgroundColor ="#212529";
