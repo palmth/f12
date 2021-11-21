@@ -124,6 +124,20 @@ DivCostPerWeek.setAttribute("id", "DivCostPerWeek");
 DivCostPerWeek.setAttribute("class", "badge sm");
 document.body.appendChild(DivCostPerWeek);
 
+var DivProfitPerWeek = document.createElement("div");
+var ContentProfitPerWeek = document.createTextNode("");
+DivProfitPerWeek.appendChild(ContentProfitPerWeek);
+//DivProfitPerWeek.innerText = "DivProfitPerWeek   "+DivProfitPerWeek+" ￦";
+DivProfitPerWeek.style.color = "white";
+//DivProfitPerWeek.style.fontSize = "xx-large";
+DivProfitPerWeek.style.position = "absolute";
+DivProfitPerWeek.style.left = "0px";
+DivProfitPerWeek.style.top = "170px";
+DivProfitPerWeek.style.backgroundColor ="#212529";
+DivProfitPerWeek.setAttribute("id", "DivProfitPerWeek");
+DivProfitPerWeek.setAttribute("class", "badge sm");
+document.body.appendChild(DivProfitPerWeek);
+
 var DivCostPer1Plot1Week = document.createElement("div");
 var ContentCostPer1Plot1Week = document.createTextNode("");
 DivCostPer1Plot1Week.appendChild(ContentCostPer1Plot1Week);
@@ -278,6 +292,7 @@ function chgList(){
 
     var Profit;
     Profit=Income-CostPerWeek;
+    document.getElementById("DivProfitPerWeek").innerText="ProfitPerWeek "+Profit+" ￦ "+(Profit*WAXPTHB).toFixed(0) +" บาท"+((Profit/CostPerWeek)*100).toFixed(2)+"% ";
 
     var CostPer1Plot1Week;
     CostPer1Plot1Week=FarmPlotR+CostPerWeek;
