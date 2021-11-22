@@ -308,7 +308,6 @@ document.body.appendChild(DivCostPer8Plot1Week);
 //document.getElementById("DivFarmPlotPrice").appendChild(imgHammer);
 
 function chgList(){
-    chkTargetTop();
     getWAXPTHB();
     //if(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText=="?"){ setTimeout(chgList, 3000);return;}
     if(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText=="?"){ setTimeout(chgList, 3000);}
