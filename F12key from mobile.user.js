@@ -408,25 +408,25 @@ function chgList(){
     Profit=Income-CostPerWeek;
     document.getElementById("DivProfitPerWeek").innerText="ProfitPerWeek "+Profit+" ￦ "+(Profit*WAXPTHB).toFixed(0) +" บาท "+((Profit/CostPerWeek)*100).toFixed(2)+"% ";
 
-        var CostPer1Plot1Week=FarmPlotR+CostPerWeek;
-    var Profit1Plot1W=Income-CostPer1Plot1Week;
-    var Profit1Plot2W=(Income*2)-CostPer1Plot1Week;
+     var CostPer1Plot1Week=FarmPlotR+CostPerWeek;
+    var Profit1Plot1W=Profit;
+    var Profit1Plot2W=Profit*2;
     var PercentProfit1Plot1W=((Profit1Plot1W/CostPer1Plot1Week)*100).toFixed(2);
     var PercentProfit1Plot2W=((Profit1Plot2W/CostPer1Plot1Week)*100).toFixed(2);
     document.getElementById("DivCostPer1Plot1Week").innerText="1Plot1W "+CostPer1Plot1Week+" ￦ "+(CostPer1Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit1Plot1W+" ￦ "+(Profit1Plot1W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit1Plot1W+"%";
     document.getElementById("DivCostPer1Plot2Week").innerText="1Plot2W "+CostPer1Plot1Week+" ￦ "+(CostPer1Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit1Plot2W+" ￦ "+(Profit1Plot2W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit1Plot2W+"%";
 
     var CostPer2Plot1Week=FarmPlotR+(CostPerWeek*2);
-    var Profit2Plot1W=(Income*2)-CostPer2Plot1Week;
-    var Profit2Plot2W=(Income*2*2)-CostPer2Plot1Week;
+    var Profit2Plot1W=Profit*2;
+    var Profit2Plot2W=Profit*2*2;
     var PercentProfit2Plot1W=((Profit2Plot1W/CostPer2Plot1Week)*100).toFixed(2);
     var PercentProfit2Plot2W=((Profit2Plot2W/CostPer2Plot1Week)*100).toFixed(2);
     document.getElementById("DivCostPer2Plot1Week").innerText="2Plot1W "+CostPer2Plot1Week+" ￦ "+(CostPer2Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit2Plot1W+" ￦ "+(Profit2Plot1W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit2Plot1W+"%";
     document.getElementById("DivCostPer2Plot2Week").innerText="2Plot2W "+CostPer2Plot1Week+" ￦ "+(CostPer2Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit2Plot2W+" ￦ "+(Profit2Plot2W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit2Plot2W+"%";
 
     var CostPer3Plot1Week=FarmPlotR+(CostPerWeek*3);
-    var Profit3Plot1W=(Income*3)-CostPer3Plot1Week;
-    var Profit3Plot2W=(Income*3*2)-CostPer3Plot1Week;
+    var Profit3Plot1W=Profit*3;
+    var Profit3Plot2W=Profit*3*2;
     var PercentProfit3Plot1W=((Profit3Plot1W/CostPer3Plot1Week)*100).toFixed(2);
     var PercentProfit3Plot2W=((Profit3Plot2W/CostPer3Plot1Week)*100).toFixed(2);
     document.getElementById("DivCostPer3Plot1Week").innerText="3Plot1W "+CostPer3Plot1Week+" ￦ "+(CostPer3Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit3Plot1W+" ￦ "+(Profit3Plot1W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit3Plot1W+"%";
