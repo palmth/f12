@@ -2,6 +2,10 @@
 // @name         f12key.xyz
 // @namespace    http://tampermonkey.net/
 // @version      0.1
+// @description  try to tak// ==UserScript==
+// @name         f12key.xyz
+// @namespace    http://tampermonkey.net/
+// @version      0.1
 // @description  try to take over the world!
 // @author       You
 // @match        https://fw.f12key.xyz/
@@ -142,7 +146,7 @@ DivBarleySeed.appendChild(ContentBarleySeed);
 //DivBarleySeed.innerText = "BARLEY SEED   "+BarleySeedPrice+" ￦";
 DivBarleySeed.style.color = "white";
 //DivBarleySeed.style.fontSize = "xx-large";
-DivBarleySeed.style.position = "relative";
+DivBarleySeed.style.position = "absolute";
 DivBarleySeed.style.left = "170px";
 DivBarleySeed.style.top = targetTop+115+"px";
 DivBarleySeed.style.backgroundColor ="#212529";
@@ -466,7 +470,7 @@ chgList();
 
 var btn1 = document.createElement("BUTTON");
 btn1.innerHTML = "reload";
-btn1.style.position = "relative";
+btn1.style.position = "absolute";
 btn1.style.top=targetTop+40+"px";
 btn1.style.left="70px";
 btn1.setAttribute("id", "btn1");
@@ -474,4 +478,4 @@ btn1.addEventListener("click", chgList);
 document.body.appendChild(btn1);
 
 
-document.addEventListener('keypress', chgList);
+document.addEventListener('keypress', chgList);e over the world!
