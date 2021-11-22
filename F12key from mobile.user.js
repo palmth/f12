@@ -199,7 +199,7 @@ DivCostPer1Plot2Week.style.color = "white";
 //DivCostPer1Plot2Week.style.fontSize = "xx-large";
 DivCostPer1Plot2Week.style.position = "relative";
 DivCostPer1Plot2Week.style.left = "0px";
-DivCostPer1Plot2Week.style.top = "40px";
+DivCostPer1Plot2Week.style.top = "45px";
 DivCostPer1Plot2Week.style.backgroundColor ="#212529";
 DivCostPer1Plot2Week.setAttribute("id", "DivCostPer1Plot1Week");
 DivCostPer1Plot2Week.setAttribute("class", "badge sm");
