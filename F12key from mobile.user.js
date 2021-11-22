@@ -291,7 +291,7 @@ function chgList(){
     var FarmPlotAtomic=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText);
     var FarmPlotCraftCost=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-alcor > div:nth-child(3) > div:nth-child(2) > span").innerText);
     var FarmPlotBuild=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-block.text-right > div > div.d-inline-block.w-50.text-right.ssm.c-white > div:nth-child(2) > span").innerText);
-    if(!isNaN(FarmPlotAtomic) &FarmPlotAtomic>FarmPlotCraftCost){
+    if(!isNaN(FarmPlotAtomic) &&(FarmPlotAtomic>FarmPlotCraftCost)){
         var FarmPlotPrice=FarmPlotCraftCost;
         DivFarmPlotPrice.insertBefore(imgHammer, DivFarmPlotPrice.childNodes[0]);
     }else if(FarmPlotCraftCost>FarmPlotAtomic){
