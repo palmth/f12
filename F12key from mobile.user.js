@@ -437,11 +437,10 @@ chgList();
 var btn1 = document.createElement("BUTTON");
 btn1.innerHTML = "reload";
 btn1.style.position = "relative";
-btn1.style.top="20px";
-btn1.style.left="-50px";
+btn1.style.top="-150px";
+btn1.style.left="0px";
 btn1.setAttribute("id", "btn1");
 btn1.addEventListener("click", chgList);
 document.body.appendChild(btn1);
-
 
 document.addEventListener('keypress', chgList);
