@@ -270,10 +270,12 @@ function chgList(){
     var FarmPlotAtomic=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText);
     var FarmPlotCraftCost=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-alcor > div:nth-child(3) > div:nth-child(2) > span").innerText);
     var FarmPlotBuild=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-block.text-right > div > div.d-inline-block.w-50.text-right.ssm.c-white > div:nth-child(2) > span").innerText);
-    if(FarmPlotAtomic>FarmPlotCraftCost){
+    if(!isNaN(FarmPlotAtomic) &FarmPlotAtomic>FarmPlotCraftCost){
         var FarmPlotPrice=FarmPlotCraftCost;
     }else if(FarmPlotCraftCost>FarmPlotAtomic){
         FarmPlotPrice=FarmPlotAtomic;
+    }else{
+        FarmPlotPrice=FarmPlotCraftCost;
     }
     document.getElementById("DivFarmPlotPrice").innerText="FARM PLOT "+FarmPlotPrice+" ￦ "+(FarmPlotPrice*WAXPTHB).toFixed(0) +" บาท";
     document.getElementById("DivBuild").innerText="Build "+FarmPlotBuild+" ￦ "+(FarmPlotBuild*WAXPTHB).toFixed(0) +" บาท";
