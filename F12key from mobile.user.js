@@ -46,7 +46,7 @@ imgHammer.setAttribute("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQ
 imgHammer.setAttribute("width", "12");
 imgHammer.setAttribute("height", "12");*/
 
-/*var DivFarmPlotPrice = document.createElement("div");
+var DivFarmPlotPrice = document.createElement("div");
 var ContentFarmPlotPrice = document.createTextNode("");
 DivFarmPlotPrice.appendChild(ContentFarmPlotPrice);
 //DivFarmPlotPrice.innerText = "FARM PLOT   "+FarmPlotPrice+" ￦";
@@ -58,9 +58,9 @@ DivFarmPlotPrice.style.top = "5px";
 DivFarmPlotPrice.style.backgroundColor ="#212529";
 DivFarmPlotPrice.setAttribute("id", "DivFarmPlotPrice");
 DivFarmPlotPrice.setAttribute("class", "badge sm");
-document.body.appendChild(DivFarmPlotPrice);*/
+document.body.appendChild(DivFarmPlotPrice);
 
-var DivFarmPlotPrice = document.createElement("div");
+/*var DivFarmPlotPrice = document.createElement("div");
 var SpanFarmPlotPrice = document.createElement("span");
 var ContentFarmPlotPrice = document.createTextNode("Test");
 SpanFarmPlotPrice.setAttribute("id", "SpanFarmPlotPrice");
@@ -73,7 +73,7 @@ DivFarmPlotPrice.style.top = targetTop+40+"px";
 DivFarmPlotPrice.style.backgroundColor ="#212529";
 DivFarmPlotPrice.setAttribute("class", "badge sm");
 DivFarmPlotPrice.setAttribute("id", "DivFarmPlotPrice");
-document.body.appendChild(DivFarmPlotPrice);
+document.body.appendChild(DivFarmPlotPrice);*/
 
 var DivBuild = document.createElement("div");
 var ContentBuild = document.createTextNode("");
