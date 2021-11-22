@@ -219,6 +219,20 @@ DivCostPer2Plot1Week.setAttribute("id", "DivCostPer2Plot1Week");
 DivCostPer2Plot1Week.setAttribute("class", "badge sm");
 document.body.appendChild(DivCostPer2Plot1Week);
 
+var DivCostPer2Plot2Week = document.createElement("div");
+var ContentCostPer2Plot2Week = document.createTextNode("");
+DivCostPer2Plot2Week.appendChild(ContentCostPer2Plot2Week);
+//DivCostPer2Plot2Week.innerText = "DivCostPer2Plot2Week   "+DivCostPer2Plot2Week+" ￦";
+DivCostPer2Plot2Week.style.color = "white";
+//DivCostPer2Plot2Week.style.fontSize = "xx-large";
+DivCostPer2Plot2Week.style.position = "relative";
+DivCostPer2Plot2Week.style.left = "0px";
+DivCostPer2Plot2Week.style.top = "55px";
+DivCostPer2Plot2Week.style.backgroundColor ="#212529";
+DivCostPer2Plot2Week.setAttribute("id", "DivCostPer2Plot2Week");
+DivCostPer2Plot2Week.setAttribute("class", "badge sm");
+document.body.appendChild(DivCostPer2Plot2Week);
+
 var DivCostPer3Plot1Week = document.createElement("div");
 var ContentCostPer3Plot1Week = document.createTextNode("");
 DivCostPer3Plot1Week.appendChild(ContentCostPer3Plot1Week);
@@ -381,20 +395,20 @@ function chgList(){
     document.getElementById("DivProfitPerWeek").innerText="ProfitPerWeek "+Profit+" ￦ "+(Profit*WAXPTHB).toFixed(0) +" บาท "+((Profit/CostPerWeek)*100).toFixed(2)+"% ";
 
     var CostPer1Plot1Week=FarmPlotR+CostPerWeek;
-    var Profit1Plot1W=Profit-FarmPlotBuild;
-    var Profit1Plot2W=(Profit*2)-FarmPlotBuild;
-    var PercentProfit1Plot1W=((Profit1Plot1W/CostPer1Plot1Week)*100).toFixed(2);
-    var PercentProfit1Plot2W=((Profit1Plot2W/CostPer1Plot1Week)*100).toFixed(2);
+    var Profit1Plot1W=Profit;
+    var Profit1Plot2W=Profit*2;
+    var PercentProfit1Plot1W=(((Profit1Plot1W-CostPer1Plot1Week)/CostPer1Plot1Week)*100).toFixed(2);
+    var PercentProfit1Plot2W=(((Profit1Plot2W-CostPer1Plot1Week)/CostPer1Plot1Week)*100).toFixed(2);
     document.getElementById("DivCostPer1Plot1Week").innerText="1Plot1W "+CostPer1Plot1Week+" ￦ "+(CostPer1Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit1Plot1W+" ￦ "+(Profit1Plot1W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit1Plot1W+"%";
     document.getElementById("DivCostPer1Plot2Week").innerText="1Plot2W "+CostPer1Plot1Week+" ￦ "+(CostPer1Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit1Plot2W+" ￦ "+(Profit1Plot2W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit1Plot2W+"%";
 
-    var CostPer2Plot1Week;
-    CostPer2Plot1Week=FarmPlotR+(CostPerWeek*2);
-    var Profit2Plot1W;
-    Profit2Plot1W=(Profit*2)-FarmPlotBuild;
-    var PercentProfit2Plot1W;
-    PercentProfit2Plot1W=((Profit2Plot1W/CostPer2Plot1Week)*100).toFixed(2);
+    var CostPer2Plot1Week=FarmPlotR+(CostPerWeek*2);
+    var Profit2Plot1W=Profit*2;
+    var Profit2Plot2W=Profit*2*2;
+    var PercentProfit2Plot1W=(((Profit2Plot1W-CostPer2Plot1Week)/CostPer2Plot1Week)*100).toFixed(2);
+    var PercentProfit2Plot2W=(((Profit2Plot2W-CostPer2Plot1Week)/CostPer2Plot1Week)*100).toFixed(2);
     document.getElementById("DivCostPer2Plot1Week").innerText="2Plot1W "+CostPer2Plot1Week+" ￦ "+(CostPer2Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit2Plot1W+" ￦ "+(Profit2Plot1W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit2Plot1W+"%";
+    document.getElementById("DivCostPer2Plot2Week").innerText="2Plot2W "+CostPer2Plot1Week+" ￦ "+(CostPer2Plot1Week*WAXPTHB).toFixed(0) +" บาท PF "+Profit2Plot2W+" ￦ "+(Profit2Plot2W*WAXPTHB).toFixed(0)+" บาท "+PercentProfit2Plot2W+"%";
 
     var CostPer3Plot1Week;
     CostPer3Plot1Week=FarmPlotR+(CostPerWeek*3);
