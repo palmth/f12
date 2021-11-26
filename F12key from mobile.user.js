@@ -171,7 +171,7 @@ DivAtomicShow.style.color = "white";
 //DivAtomicShow.style.fontSize = "xx-large";
 DivAtomicShow.style.position = "relative";
 DivAtomicShow.style.left = "20px";
-DivAtomicShow.style.top = "25px";
+DivAtomicShow.style.top = "20px";
 DivAtomicShow.style.backgroundColor ="red";
 DivAtomicShow.setAttribute("id", "DivAtomicShow");
 DivAtomicShow.setAttribute("class", "badge sm");
