@@ -169,7 +169,7 @@ DivAtomicShow.appendChild(ContentAtomicShow);
 DivAtomicShow.innerText = "Atomic ???";
 DivAtomicShow.style.color = "white";
 //DivAtomicShow.style.fontSize = "xx-large";
-DivAtomicShow.style.position = "absolute";
+DivAtomicShow.style.position = "relative";
 DivAtomicShow.style.left = "20px";
 DivAtomicShow.style.top = "20px";
 DivAtomicShow.style.backgroundColor ="red";
