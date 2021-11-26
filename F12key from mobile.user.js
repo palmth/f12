@@ -163,6 +163,20 @@ DivProfitPerWeek.setAttribute("id", "DivProfitPerWeek");
 DivProfitPerWeek.setAttribute("class", "badge sm");
 document.body.appendChild(DivProfitPerWeek);
 
+var DivAtomicShow = document.createElement("div");
+var ContentAtomicShow = document.createTextNode("");
+DivAtomicShow.appendChild(ContentAtomicShow);
+DivAtomicShow.innerText = "Atomic ???";
+DivAtomicShow.style.color = "white";
+//DivAtomicShow.style.fontSize = "xx-large";
+DivAtomicShow.style.position = "absolute";
+DivAtomicShow.style.left = "20px";
+DivAtomicShow.style.top = "20px";
+DivAtomicShow.style.backgroundColor ="red";
+DivAtomicShow.setAttribute("id", "DivAtomicShow");
+DivAtomicShow.setAttribute("class", "badge sm");
+document.body.appendChild(DivAtomicShow);
+
 var DivCostPer1Plot1Week = document.createElement("div");
 var ContentCostPer1Plot1Week = document.createTextNode("");
 DivCostPer1Plot1Week.appendChild(ContentCostPer1Plot1Week);
@@ -390,7 +404,7 @@ document.body.appendChild(DivCostPer8Plot2Week);
 function chgList(){
     getWAXPTHB();
     //if(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText=="?"){ setTimeout(chgList, 3000);return;}
-    if(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText=="?"){ setTimeout(chgList, 3000);}
+    if(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText=="?"){ setTimeout(chgList, 3000);}else{document.querySelector("#DivAtomicShow").style.visibility="hidden";}
     var FarmPlotAtomic=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-atomic > div.d-inline-block.w-75.flex-right.vtop > a > span:nth-child(2)").innerText);
     var FarmPlotCraftCost=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-inline-block.w-50.b-alcor > div:nth-child(3) > div:nth-child(2) > span").innerText);
     var FarmPlotBuild=parseInt(document.querySelector("#listFarmingRaising > div:nth-child(1) > div > div > div > div.d-block.text-right > div > div.d-inline-block.w-50.text-right.ssm.c-white > div:nth-child(2) > span").innerText);
